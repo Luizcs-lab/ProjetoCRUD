@@ -49,9 +49,9 @@ div{
     <!--area de botões para ação de excluir, listar e atualizar-->
     <div>
         <a href="formulario.html"><button type="button" class="btn btn-primary">Cadastrar</button></a>
-    <button type="button" class="btn btn-primary">Listar</button>
-    <button type="button" class="btn btn-primary">Atualizar</button>
-    <button type="button" class="btn btn-primary">Excluir</button>
+        <a href="listar.html"><button type="button" class="btn btn-primary">Listar</button></a>
+        <a href="atualizar.html"><button type="button" class="btn btn-primary">Atualizar</button></a>
+    <a href="delete.html"><button type="button" class="btn btn-primary">Excluir</button></a>
     </div>
     
     </section>
