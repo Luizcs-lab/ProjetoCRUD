@@ -16,8 +16,22 @@
 <body>
     <h1>Sistema de CRUD - Atualização</h1>
     
+    <form action="edit.php" method="POST">
+      <h1>Cadastro de Usuário</h1>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite o novo nome de usuario:" required>
+      <br>
+      <label for="email">E-mail:</label>
+      <input type="password" id="email" name="email" placeholder="Digite o novo e-mail:" required>
+      <br>
+      <label for="idade">Idade:</label>
+      <input type="password" id="idade" name="idade" placeholder="Digite idade:" required>
+      <br>
+      <button type="submit" name="update" class="btn btn-primary">atualizar</button>
+      
+  </form>
 
-
+  
     <a href="index.php"><button type="button" class="btn btn-primary">Voltar</button></a>
 </body>
 </html>
