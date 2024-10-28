@@ -1,21 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusão de Usuário</title>
     <link rel="stylesheet" href="style.css">
-    <!--link do bootstrap-->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <title>Exclusão</title>
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"/>
+
+    <style>
+        form {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-top: 10%;
+            width: 450px;
+            height: auto; /* Altera para auto para se ajustar ao conteúdo */
+            background: linear-gradient(45deg, rgb(126, 126, 248), rgb(52, 52, 253));
+            border-radius: 10%;
+            padding: 20px; /* Adiciona espaço interno ao formulário */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+        }
+    </style>
 </head>
-<body>
-    <h1>Sistema de CRUD - Exclusão</h1>
-    <!--LINKAGEM DE PÁGINA PARA VOLTAR AO INDEX.PHP-->
-    <a href="index.php"><button type="button" class="btn btn-primary">Voltar</button></a>
+<body>   
+
+    <form action="delete.php" method="POST">
+        <h1>Exclusão de Usuário</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-person-fill-dash" viewBox="0 0 16 16">
+  <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M11 12h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1m0-7a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+</svg>
+        <label for="id">Forneça um ID:</label>
+        <input type="number" id="id" name="id" placeholder="Digite um ID" required>
+        <br>
+        <button type="submit" class="btn btn-secondary">Deletar</button>
+        <a href="index.php" class="btn btn-secondary">Voltar</a>
+    </form>
+    
+
 </body>
 </html>

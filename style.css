@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     display: flex;
     align-items: center;
-    background:linear-gradient(45deg,rgb(87, 188, 196),rgb(34, 88, 138));
+    background:linear-gradient(90deg,rgb(121, 153, 156),rgb(51, 70, 90));
 }
 .btn-group{
     display: flex;
@@ -17,10 +17,28 @@ body{
 input{
     border-radius: 20%;
 }
+
 table{
-    width: 500px;
-    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.navbar bg-body-tertiary{
+    border-radius: 5%;
+
+
+}
+form{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 10%;
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(45deg,rgb(126, 126, 248),rgb(52, 52, 253));
     border-radius: 10%;
-    background-color: aqua;
-    border-color: cadetblue;
 }

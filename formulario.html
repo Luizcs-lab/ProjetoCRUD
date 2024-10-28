@@ -12,25 +12,15 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"/>
 
-<style>
-    form{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-top: 10%;
-    width: 450px;
-    height: 450px;
-    background: linear-gradient(45deg,rgb(126, 126, 248),rgb(52, 52, 253));
-    border-radius: 10%;
-}
-
-</style>
 </head>
 <body>   
 
     <form action="create.php" method="POST">
         <h1>Cadastro de Usuário</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+  <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+</svg>
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
         <br>
