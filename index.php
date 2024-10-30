@@ -58,7 +58,7 @@
     <div>
       <a href="formulario.html"><button type="button" class="btn btn-primary">Cadastrar</button></a>
       <a href="listar.php"><button type="button" class="btn btn-primary">Listar</button></a>
-      <a href="atualizar.php"><button type="button" class="btn btn-primary">Atualizar</button></a>
+      
       <a href="delete.html"><button type="button" class="btn btn-primary">Excluir</button></a>
     </div>
 
