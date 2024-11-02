@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     display: flex;
     align-items: center;
-    background:linear-gradient(90deg,rgb(121, 153, 156),rgb(51, 70, 90));
+    background:linear-gradient(90deg,rgb(0, 22, 41),rgb(98, 190, 197),  rgb(0, 22, 41));
 }
 .btn-group{
     display: flex;
@@ -19,18 +19,14 @@ input{
 }
 
 table{
-    
+   
     display: flex;
     flex-direction: column;
-    justify-content: center;
+   
     align-items: center;
-    margin-top: 10%;
+    margin-top: 8%;
 }
-.navbar bg-body-tertiary{
-    border-radius: 5%;
 
-
-}
 form{
     flex-direction: column;
     display: flex;
@@ -38,7 +34,42 @@ form{
     position: relative;
     margin-top: 10%;
     width: 450px;
-    height: 450px;
+    height: 550px;
     background: linear-gradient(45deg,rgb(126, 126, 248),rgb(52, 52, 253));
     border-radius: 10%;
+    border-style: ridge;
+    border-color: rgb(115, 207, 235) ;
+    border-width: 10px;
 }
+h1  {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(51, 70, 90);
+    
+
+  }
+  p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(51, 70, 90);
+  }
+  section {
+    margin-top: 5%;
+    width: 850px;
+    height: 560px;
+    background: linear-gradient(45deg, rgb(160, 160, 223), rgb(113, 113, 245));
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: ridge;
+    border-color: rgb(115, 207, 235) ;
+    border-width: 10px;
+
+  }   
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+  }

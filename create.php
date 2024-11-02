@@ -59,6 +59,6 @@ include ("connection.php");
     
     mysqli_close($conn);
 ?>
-    <a href="index.php"><button type="button" class="btn btn-primary">Voltar</button></a>
+    <a href="index.php"><button type="button" class="btn btn-outline-info">Voltar</button></a>
   </body>
 </html>

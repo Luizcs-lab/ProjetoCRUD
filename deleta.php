@@ -17,12 +17,8 @@
 
 <?php
 include("connection.php"); // Certifique-se de que este arquivo está correto
-
-// Verifica se o formulário foi enviado
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Pegando o id do formulário
     $id = $_POST['id'];
-
     // Validação básica para verificar se o ID é um número
     if (filter_var($id, FILTER_VALIDATE_INT) === false) {
         die("ID inválido."); // Se não for um número, mostra mensagem de erro
@@ -30,10 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Prepara o comando para deletar dados na tabela do banco
     $sql = "DELETE FROM clientes WHERE id=?";
-    $stmt = mysqli_prepare($conn, $sql);
-    
-    // Liga o parâmetro
-    mysqli_stmt_bind_param($stmt, 'i', $id);
+    $stmt = mysqli_prepare($conn, $sql);    
 
     // Executa o comando
     if (mysqli_stmt_execute($stmt)) {
@@ -45,8 +38,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Fecha a declaração e a conexão
     mysqli_stmt_close($stmt);
     mysqli_close($conn);
-} else {
-    echo "Método de requisição inválido.";
-}
+
 ?>
-<a href="index.php"><button type="button" class="btn btn-primary">Voltar</button></a>
+<a href="index.php"><button type="button" class="btn btn-outline-info">Voltar</button></a>
