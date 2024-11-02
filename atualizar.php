@@ -44,7 +44,7 @@ $linha = mysqli_fetch_assoc($resultado);
       <input type="number" id="idade" name="idade" placeholder="Digite idade:"value="<?php echo $linha['idade'];?>" required>
       <br>
       <div>
-      <button type="submit" value="update" name="update" class="btn btn-primary">atualizar</button>
+      <button type="submit" value="update" name="update" class="btn btn-outline-info">atualizar</button>
       <a href="index.php"><button type="button" class="btn btn-outline-info">Voltar</button></a>
       </div>
      
